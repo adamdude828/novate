@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace Novate\Http\Controllers\Auth;
 
-use App\User;
+use Novate\Models\User;
 use Validator;
-use App\Http\Controllers\Controller;
+use Novate\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
@@ -22,6 +22,8 @@ class AuthController extends Controller
     */
 
     use AuthenticatesAndRegistersUsers, ThrottlesLogins;
+
+    protected $redirectPath = "/dashboard";
 
     /**
      * Create a new authentication controller instance.

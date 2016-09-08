@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Events;
+namespace Novate\Events;
 
 abstract class Event
 {
